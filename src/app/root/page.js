@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './page.module.css';
 import Link from 'next/link';
 
@@ -21,9 +20,9 @@ export default function Home() {
                     Pioneer Drilling
                   </h1>
                   <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                    We're an oil and gas drilling company based in San Antonio,
+                    {`We're an oil and gas drilling company based in San Antonio,
                     Texas. Our mission is to provide safe, efficient, and
-                    cost-effective drilling solutions to our customers.
+                    cost-effective drilling solutions to our customers.`}
                   </h2>
                 </div>
                 <div className="flex-wrap gap-3 flex">
@@ -57,8 +56,8 @@ export default function Home() {
               Land Drilling
             </h2>
             <p className="text-[#507695] text-sm font-normal leading-normal">
-              Safe, efficient, and cost-effective drilling solutions for onshore
-              oil and gas exploration and production
+              {`Safe, efficient, and cost-effective drilling solutions for onshore
+              oil and gas exploration and production`}
             </p>
           </div>
         </div>

@@ -1,11 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 function NavBar() {
   return (
     <>
       <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29374C] px-10 py-3">
         <div className="flex items-center gap-4 text-[#F8F9FB]">
-          <img width={200} src="/logo.png" />
+          <Image
+            width={200}
+            height={100}
+            src="/logo.png"
+            alt="Direct Drilling & Sawing Logo"
+          />
           <div>
             <h2 className="text-[#F8F9FB] text-lg font-bold leading-tight tracking-[-0.015em]">
               Direct Drilling &amp; Sawing
