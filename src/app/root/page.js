@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="px-10">
-      <div className="px-40 flex flex-1 justify-center py-5">
+    <div className="">
+      <div className="md:px-40 flex flex-1 justify-center py-5">
         <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
           <div className="@container">
             <div className="@[480px]:p-4">
@@ -26,12 +26,16 @@ export default function Home() {
                   </h2>
                 </div>
                 <div className="flex-wrap gap-3 flex">
-                  <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1b78c5] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
-                    <span className="truncate">Learn More</span>
-                  </button>
-                  <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#e8eef3] text-[#0e151b] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
-                    <span className="truncate">Contact Us</span>
-                  </button>
+                  <Link href="/about-us">
+                    <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1b78c5] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                      <span className="truncate">Learn More</span>
+                    </button>
+                  </Link>
+                  <Link href="/contact-us">
+                    <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#e8eef3] text-[#0e151b] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                      <span className="truncate">Contact Us</span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -39,10 +43,10 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className=" text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+      <h2 className="text-center text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
         Our Services
       </h2>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3 p-4 px-5 sm:px-20 md:px-40">
         <div className="flex flex-1 gap-3 rounded-lg border border-[#d1dce6] bg-[#f8fafb] p-4 flex-col">
           <div
             className="bg-center bg-no-repeat aspect-square bg-cover rounded-lg w-10 shrink-0"

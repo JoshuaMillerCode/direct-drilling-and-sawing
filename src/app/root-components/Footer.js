@@ -75,7 +75,7 @@ function Footer() {
               </a>
             </div>
             <p className="text-[#8A9DC0] text-base font-normal leading-normal">
-              © 2023 AMERICAN DRILLING &amp; SAWING, INC. All rights reserved.
+              © 2024 DIRECT DRILLING &amp; SAWING, INC. All rights reserved.
             </p>
           </footer>
         </div>
