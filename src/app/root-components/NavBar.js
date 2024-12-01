@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar() {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -89,7 +91,7 @@ function NavBar() {
               onClick={handleMenuClick}
               ref={buttonRef}
             >
-              <i className="fa-solid fa-bars fa-xl"></i>
+              <FontAwesomeIcon icon={faBars} size="xl" />
               <svg
                 class="w-2.5 h-2.5 ms-3"
                 aria-hidden="true"
